@@ -90,7 +90,10 @@ int main() {
     
     // Experimental Run
     std::cout << "\nResults (Cold Run):" << std::endl;
+    lab::print_qor("Standard Malloc", ITERATIONS * sizeof(Node));
     bench_malloc();
+    
+    lab::print_qor("Custom Arena", ITERATIONS * sizeof(Node));
     bench_arena();
 
     return 0;

@@ -116,6 +116,7 @@ int main() {
         btree.insert(x);
     }
 
+    lab::print_qor("std::set (BST)", COUNT * 32);
     {
         lab::Benchmark b("std::set Lookup");
         long long found = 0;
@@ -123,6 +124,7 @@ int main() {
         lab::escape(&found);
     }
 
+    lab::print_qor("B-Tree (Order 16)", COUNT * sizeof(int) * 2); // Heuristic: ~2x overhead for keys + pointers
     {
         lab::Benchmark b("B-Tree (Order 16) Lookup");
         long long found = 0;

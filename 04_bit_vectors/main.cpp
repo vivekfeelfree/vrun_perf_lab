@@ -87,6 +87,9 @@ const int BIT_COUNT = 1'000'000;
 int main() {
     std::cout << "--- Bit-Vector Laboratory (" << BIT_COUNT << " bits) ---" << std::endl;
 
+    size_t mem = ((BIT_COUNT + 63) / 64) * sizeof(uint64_t);
+    lab::print_qor("BitVector Footprint", mem);
+
     BitVector a(BIT_COUNT), b(BIT_COUNT), res(BIT_COUNT);
     
     // Fill every 3rd bit to give the population count some work

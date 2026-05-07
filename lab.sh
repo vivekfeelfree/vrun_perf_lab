@@ -1,15 +1,19 @@
 #!/usr/bin/env bash
 
-# Systems Lab Orchestrator
-# Usage: ./lab.sh [build|run|bench|clean] [module_number]
+# Systems Lab Orchestrator v2.0
+# Usage: ./lab.sh [build|run|bench|clean|all] [module_number]
 
 set -e
+set -o pipefail
 
 # Colors for output
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 RED='\033[0;31m'
 NC='\033[0m'
+
+LOG_DIR="logs"
+mkdir -p "$LOG_DIR"
 
 # Find all modules
 get_modules() {
@@ -34,14 +38,51 @@ run_module() {
     if [ ! -f "${mod_dir}/experiment" ]; then
         build_module "$mod_dir"
     fi
+    
+    local mod_name=$(basename "$mod_dir")
+    local log_file="$LOG_DIR/${mod_name}.log"
+    
+    echo "=== Module: $mod_name ===" > "$log_file"
+    local start_time=$(date +%s%3N)
+    local start_human=$(date "+%Y-%m-%d %H:%M:%S.%3N")
+    echo "Start Time: $start_human" >> "$log_file"
+    echo "------------------------------------------" >> "$log_file"
+    
     echo -e "${BLUE}Running ${mod_dir}...${NC}"
-    "./${mod_dir}/experiment"
+    
+    # Strict 2-minute timeout
+    set +e
+    timeout 120s "./${mod_dir}/experiment" 2>&1 | tee -a "$log_file"
+    local status=$?
+    set -e
+
+    local end_time=$(date +%s%3N)
+    local end_human=$(date "+%Y-%m-%d %H:%M:%S.%3N")
+    local total_ms=$((end_time - start_time))
+    
+    echo "------------------------------------------" >> "$log_file"
+    echo "End Time: $end_human" >> "$log_file"
+    echo "Total Execution Time: ${total_ms}ms" >> "$log_file"
+
+    if [ $status -eq 124 ]; then
+        echo -e "${RED}[TIMEOUT] ${mod_dir} exceeded 2 minute limit.${NC}"
+        echo "Status: TIMEOUT" >> "$log_file"
+    elif [ $status -ne 0 ]; then
+        echo -e "${RED}[ERROR] ${mod_dir} failed with exit code $status.${NC}"
+        echo "Status: ERROR ($status)" >> "$log_file"
+    else
+        echo -e "${GREEN}[SUCCESS] ${mod_dir} completed in ${total_ms}ms.${NC}"
+        echo "Status: SUCCESS" >> "$log_file"
+    fi
+    
+    # Also append to global run.log for summary
+    echo "[$(date "+%H:%M:%S")] $mod_name | Status: $status | Time: ${total_ms}ms" >> run.log
 }
 
 clean_module() {
     local mod_dir=$1
     rm -f "${mod_dir}/experiment"
-    echo -e "Cleaned ${mod_dir}"
+    echo -e "${BLUE}Cleaned ${mod_dir}${NC}"
 }
 
 case "$1" in
@@ -53,6 +94,7 @@ case "$1" in
         fi
         ;;
     run|bench)
+        echo "=== Lab Summary: $(date) ===" > run.log
         if [ -n "$2" ]; then
             run_module "$(find_module "$2")"
         else
@@ -67,6 +109,7 @@ case "$1" in
         fi
         ;;
     all)
+        echo "=== Lab Summary: $(date) ===" > run.log
         for m in $(get_modules); do 
             build_module "$m"
             run_module "$m"

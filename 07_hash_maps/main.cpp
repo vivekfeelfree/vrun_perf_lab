@@ -91,6 +91,7 @@ int main() {
 
     // Benchmark 1: std::unordered_map (Chaining)
     {
+        lab::print_qor("std::unordered_map", ITEM_COUNT * (sizeof(int)*2 + sizeof(void*)));
         std::unordered_map<int, int> std_map;
         lab::Benchmark b("std::unordered_map (Insert)");
         for(int k : keys) std_map[k] = k;
@@ -98,6 +99,7 @@ int main() {
 
     // Benchmark 2: RobinHoodMap (Open Addressing)
     {
+        lab::print_qor("RobinHoodMap", TABLE_SIZE * 24); // Entry is roughly 24 bytes
         RobinHoodMap<int, int> rh_map(TABLE_SIZE);
         lab::Benchmark b("RobinHoodMap (Insert)");
         for(int k : keys) rh_map.insert(k, k);

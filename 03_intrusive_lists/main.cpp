@@ -89,7 +89,10 @@ void experiment_multi_homing() {
 int main() {
     std::cout << "--- Intrusive List Benchmark (" << COUNT << " elements) ---" << std::endl;
     
+    lab::print_qor("std::list<int>", COUNT * (sizeof(int) + 2 * sizeof(void*)));
     bench_std_list();
+
+    lab::print_qor("IntrusiveList + Arena", COUNT * sizeof(Process));
     bench_intrusive_list();
     
     experiment_multi_homing();

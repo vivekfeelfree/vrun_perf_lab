@@ -69,7 +69,10 @@ int main() {
     std::cout << "--- Circular Buffer Laboratory (" << OPERATIONS << " ops) ---" << std::endl;
 
     // We compare 1000 (Non-Power-of-Two) vs 1024 (Power-of-Two)
+    lab::print_qor("Modulo Buffer", 1000 * sizeof(int));
     ModuloBuffer mod_buf(1000);
+    
+    lab::print_qor("Mask Buffer", 1024 * sizeof(int));
     MaskBuffer mask_buf(1024);
 
     {

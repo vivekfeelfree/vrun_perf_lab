@@ -73,6 +73,7 @@ int main() {
         bst.insert(keys[i]);
     }
 
+    lab::print_qor("std::set (BST)", 1000 * 32);
     {
         lab::Benchmark b("std::set lower_bound (BST)");
         uint32_t sum = 0;
@@ -83,6 +84,7 @@ int main() {
         lab::escape(&sum);
     }
 
+    lab::print_qor("Radix Tree", 1000 * 32 * 24); // Heuristic: 1000 keys * 32 nodes/key * ~24 bytes/node
     {
         lab::Benchmark b("Radix Tree Match");
         uint32_t sum = 0;

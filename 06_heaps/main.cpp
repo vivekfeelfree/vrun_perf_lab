@@ -125,6 +125,7 @@ int main() {
     for(int i=0; i<COUNT; ++i) raw_data[i] = rand();
 
     {
+        lab::print_qor("std::priority_queue", COUNT * sizeof(int));
         std::priority_queue<int, std::vector<int>, std::greater<int>> pq;
         lab::Benchmark bench("std::priority_queue");
         for(int x : raw_data) pq.push(x);
@@ -136,6 +137,7 @@ int main() {
     }
 
     {
+        lab::print_qor("BinaryHeap", COUNT * sizeof(int));
         BinaryHeap<int> bh;
         lab::Benchmark bench("Hand-rolled BinaryHeap");
         for(int x : raw_data) bh.push(x);
@@ -146,6 +148,7 @@ int main() {
     }
 
     {
+        lab::print_qor("QuadHeap", COUNT * sizeof(int));
         QuadHeap<int> qh;
         lab::Benchmark bench("Hand-rolled QuadHeap (4-ary)");
         for(int x : raw_data) qh.push(x);
