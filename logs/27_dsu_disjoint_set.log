@@ -1,0 +1,12 @@
+=== Module: 27_dsu_disjoint_set ===
+Start Time: 2026-05-07 22:36:19.720
+------------------------------------------
+--- DSU Laboratory (1000000 nodes) ---
+[QoR] Initial DSU                    | Memory:    8000048 bytes
+[BENCH] Batch Unions (2M)             :    804762085 ns
+[BENCH] Batch Finds (2M)              :    240925456 ns
+[QoR] Final DSU                      | Memory:    8000048 bytes
+------------------------------------------
+End Time: 2026-05-07 22:36:20.959
+Total Execution Time: 1262ms
+Status: SUCCESS

@@ -1,0 +1,12 @@
+=== Module: 23_min_cost_max_flow ===
+Start Time: 2026-05-07 22:33:01.415
+------------------------------------------
+--- Min-Cost Max-Flow Laboratory (200 nodes) ---
+[QoR] Network Setup                  | Memory:      46112 bytes
+[BENCH] MCMF Successive Shortest Path :      1552653 ns
+[QoR] Final MCMF                     | Memory:      46112 bytes | Checksum: 17458
+[METRICS] Max Flow: 12 | Min Cost: 17458
+------------------------------------------
+End Time: 2026-05-07 22:33:01.576
+Total Execution Time: 153ms
+Status: SUCCESS

@@ -1,0 +1,12 @@
+=== Module: 25_scc_tarjan ===
+Start Time: 2026-05-07 22:36:10.509
+------------------------------------------
+--- Tarjan's SCC Laboratory (10000 nodes) ---
+[QoR] Initial Graph                  | Memory:     450160 bytes
+[BENCH] Tarjan SCC Detection          :      3501546 ns
+[QoR] Final Result                   | Memory:     450160 bytes | Checksum: 593
+[METRICS] SCCs Found: 593
+------------------------------------------
+End Time: 2026-05-07 22:36:10.753
+Total Execution Time: 254ms
+Status: SUCCESS

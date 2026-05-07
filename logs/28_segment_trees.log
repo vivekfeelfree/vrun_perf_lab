@@ -1,0 +1,12 @@
+=== Module: 28_segment_trees ===
+Start Time: 2026-05-07 22:45:38.532
+------------------------------------------
+--- Segment Tree Laboratory (100000 elements) ---
+[QoR] Segment Tree Setup             | Memory:    3200032 bytes
+[BENCH] Range Sum Queries (50k)       :     50699951 ns
+[BENCH] Point Updates (50k)           :     23934692 ns
+[QoR] Final Segment Tree             | Memory:    3200032 bytes
+------------------------------------------
+End Time: 2026-05-07 22:45:38.845
+Total Execution Time: 281ms
+Status: SUCCESS

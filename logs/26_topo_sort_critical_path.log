@@ -1,0 +1,12 @@
+=== Module: 26_topo_sort_critical_path ===
+Start Time: 2026-05-07 22:36:15.195
+------------------------------------------
+--- Critical Path Analysis Laboratory (20000 nodes) ---
+[QoR] DAG Infrastructure             | Memory:     960012 bytes
+[BENCH] Critical Path Analysis        :      1809896 ns
+[QoR] Final Result                   | Memory:     960012 bytes | Checksum: 99502
+[METRICS] Critical Path Delay: 99502.8
+------------------------------------------
+End Time: 2026-05-07 22:36:15.394
+Total Execution Time: 199ms
+Status: SUCCESS

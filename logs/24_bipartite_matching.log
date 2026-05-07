@@ -1,0 +1,12 @@
+=== Module: 24_bipartite_matching ===
+Start Time: 2026-05-07 22:33:08.105
+------------------------------------------
+--- Bipartite Matching Laboratory (5000x5000) ---
+[QoR] Bipartite Graph                | Memory:     280140 bytes
+[BENCH] Hopcroft-Karp Matching        :      9387045 ns
+[QoR] Final Result                   | Memory:     280140 bytes | Checksum: 4970
+[METRICS] Max Matching: 4970
+------------------------------------------
+End Time: 2026-05-07 22:33:08.314
+Total Execution Time: 233ms
+Status: SUCCESS

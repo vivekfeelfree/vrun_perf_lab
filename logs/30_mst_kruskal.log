@@ -1,0 +1,12 @@
+=== Module: 30_mst_kruskal ===
+Start Time: 2026-05-07 22:45:46.429
+------------------------------------------
+--- Kruskal's MST Laboratory (50000 nodes) ---
+[QoR] Initial Graph                  | Memory:    2400032 bytes
+[BENCH] Kruskal's Algorithm           :     15807984 ns
+[QoR] Final Result                   | Memory:    2400032 bytes | Checksum: 7459370
+[METRICS] MST Total Weight: 7459370
+------------------------------------------
+End Time: 2026-05-07 22:45:46.622
+Total Execution Time: 196ms
+Status: SUCCESS
