@@ -73,6 +73,7 @@ int main() {
     // Experiment 1: Measuring the impact of the larger struct
     {
         std::vector<BadStruct> data(ELEMENT_COUNT);
+        lab::print_qor("Bad Layout", sizeof(BadStruct) * ELEMENT_COUNT);
         lab::Benchmark b("Bad Layout (24 bytes)");
         double sum = 0;
         for(auto& item : data) {
@@ -85,6 +86,7 @@ int main() {
     // Experiment 2: Measuring the impact of the packed struct
     {
         std::vector<GoodStruct> data(ELEMENT_COUNT);
+        lab::print_qor("Good Layout", sizeof(GoodStruct) * ELEMENT_COUNT);
         lab::Benchmark b("Good Layout (16 bytes)");
         double sum = 0;
         for(auto& item : data) {

@@ -1,53 +1,28 @@
-# Module 01: Memory Layout & Mechanical Sympathy
+# Module 01: Memory Layout & Cache Locality
 
-## The Core Question
+## 🎯 Core Problem
 Why does the order of variables in a `struct` change the speed of a program?
 
-## 1. The Hardware Reality: Memory Alignment
-CPUs do not read memory byte-by-byte. They read in "words" (usually 8 bytes on 64-bit systems). If a 4-byte `int` is stored at a memory address that isn't a multiple of 4, the CPU might have to:
-1.  Read two different 8-byte words.
-2.  Shift and mask the bits to "stitch" the integer back together.
+## 🧠 Technical Depth
+### 1. Memory Alignment
+CPUs read memory in "words" (8 bytes on 64-bit). If a 4-byte `int` is not aligned to a 4-byte boundary, the CPU must perform extra shifts and masks (or multiple fetches). Compilers insert **Padding** to avoid this.
 
-To avoid this performance penalty, compilers insert **Padding**.
+### 2. Spatial Locality (Cache Lines)
+Modern CPUs fetch data in **64-byte Cache Lines**. 
+- A 24-byte struct allows only 2.6 items per cache line.
+- A 16-byte struct allows 4 items per cache line.
+This 50% density increase results in fewer DRAM fetches and better prefetcher performance.
 
-### Example: The "Bad" Layout
-```cpp
-struct BadStruct {
-    char a;      // 1 byte
-    // 7 bytes of hidden padding here!
-    double b;    // 8 bytes (must start on 8-byte boundary)
-    char c;      // 1 byte
-    // 3 bytes of hidden padding here!
-    int d;       // 4 bytes
-    // 4 bytes of tail padding!
-}; // Total: 24 bytes
-```
+## 📊 Tracked Metrics
+- **Time:** Wall-clock time (ns) for 10M iterations.
+- **QoR (Memory):** Byte-level footprint of the array.
+- **Efficiency:** Processing time per byte.
 
-### The "Good" Layout (Descending Size)
-By sorting members from largest to smallest, we minimize holes:
-```cpp
-struct GoodStruct {
-    double b;    // 8 bytes
-    int d;       // 4 bytes
-    char a;      // 1 byte
-    char c;      // 1 byte
-    // 2 bytes of padding at the end
-}; // Total: 16 bytes
-```
-
-## 2. The Cache Factor
-Modern CPUs have **Cache Lines** (typically 64 bytes). When you access one byte, the CPU fetches the entire 64-byte line from RAM into the L1 Cache.
-
-- **BadStruct (24 bytes):** Only ~2.6 structs fit in one cache line.
-- **GoodStruct (16 bytes):** Exactly 4 structs fit in one cache line.
-
-**Impact:** Packing data more tightly means 50% more data in your cache, leading to fewer expensive trips to main memory (RAM).
-
-## 3. The Experiment
-In `main.cpp`, we:
-1.  Use `offsetof` to reveal the "invisible" padding bytes.
-2.  Benchmark a tight loop iterating over 10 million elements.
-3.  Observe how the 16-byte struct outperforms the 24-byte struct purely due to cache efficiency.
+## 🧪 Experiment
+1.  Compare `BadStruct` (unfiltered order) vs. `GoodStruct` (descending size order).
+2.  Inspect padding using `offsetof`.
+3.  Benchmark linear iteration.
 
 ## 🎛 Experimental Controls
-You can modify `ELEMENT_COUNT` in `main.cpp` to see how the performance gap grows as the data exceeds the size of your L2 or L3 cache.
+- **Compiler Optimizations:** `-O3` used to test production behavior.
+- **Cache Size:** 10M elements (160MB-240MB) ensures we exceed L3 cache, stressing the DRAM interface.

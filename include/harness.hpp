@@ -42,4 +42,14 @@ namespace lab {
         return val;
     }
 
+    /**
+     * QoR Tracker: Memory and Integrity
+     */
+    inline void print_qor(const std::string& label, size_t memory_bytes, size_t integrity_check = 0) {
+        std::cout << "[QoR] " << std::left << std::setw(30) << label 
+                  << " | Memory: " << std::right << std::setw(10) << memory_bytes << " bytes"
+                  << (integrity_check ? " | Checksum: " + std::to_string(integrity_check) : "")
+                  << std::endl;
+    }
+
 } // namespace lab
