@@ -1,0 +1,11 @@
+# Binaries
+experiment
+*/experiment
+
+# Objects
+*.o
+*.obj
+
+# OS files
+.DS_Store
+Thumbs.db
