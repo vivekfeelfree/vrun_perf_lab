@@ -22,7 +22,7 @@ Every module follows the **Research -> Implement -> Measure** lifecycle. We prio
 - **[07_Hash_Maps](./07_hash_maps/)**: Robin Hood hashing (Open Addressing) for cache locality.
 - **[08_Radix_Trees](./08_radix_trees/)**: Prefix matching and bit-level trie navigation.
 - **[09_B_Trees](./09_b_trees/)**: Memory-resident multi-way search trees for minimized cache misses.
-- **[10_Sparse_Sets](./10_sparse_sets/)**: (NEW) EnTT-style sparse sets for O(1) iteration and lookup.
+- **[10_Sparse_Sets](./10_sparse_sets/)**: EnTT-style sparse sets for O(1) iteration and lookup.
 
 ### II. C++ Nuances & Architecture (11-20)
 - **[11_Value_vs_Pointer](./11_value_vs_pointer/)**: Data-Oriented Design (DOD) and the indirection tax.
@@ -38,17 +38,45 @@ Every module follows the **Research -> Implement -> Measure** lifecycle. We prio
 
 ### III. DSA & Graph Algorithms (21-30)
 - **[21_Graph_Partitioning_KL](./21_graph_partitioning_kl/)**: Kernighan-Lin heuristic for min-cut partitioning.
-- **(Pending 22-30)**: Advanced flow, matching, and coloring algorithms.
+- **[22_Max_Flow_Dinic](./22_max_flow_dinic/)**: Dinic's algorithm for maximum network flow.
+- **[23_Min_Cost_Max_Flow](./23_min_cost_max_flow/)**: Successive Shortest Path algorithm for MCMF.
+- **[24_Bipartite_Matching](./24_bipartite_matching/)**: Hopcroft-Karp $O(E \sqrt{V})$ matching.
+- **[25_SCC_Tarjan](./25_scc_tarjan/)**: Tarjan's algorithm for strongly connected components.
+- **[26_Topo_Sort_Critical_Path](./26_topo_sort_critical_path/)**: DAG analysis for Static Timing Analysis.
+- **[27_DSU_Disjoint_Set](./27_dsu_disjoint_set/)**: Near-constant time set union and find.
+- **[28_Segment_Trees](./28_segment_trees/)**: Logarithmic range queries and point updates.
+- **[29_AStar_Search](./29_astar_search/)**: Heuristic-guided shortest path on grids.
+- **[30_MST_Kruskal](./30_mst_kruskal/)**: Minimum Spanning Tree using DSU.
 
 ### IV. Logic Synthesis (31-50)
 - **[31_Logic_Synthesis_BDD](./31_logic_synthesis_bdd/)**: Binary Decision Diagrams and Structural Hashing.
 - **[32_Logic_Synthesis_AIG](./32_logic_synthesis_aig/)**: And-Inverter Graphs & 2-Level Strashing.
-- **[33_SAT_Solver](./33_sat_solver/)**: Boolean Satisfiability and Unit Propagation (BCP) metrics.
+- **[33_SAT_Solver](./33_sat_solver/)**: Boolean Satisfiability and Unit Propagation (BCP).
 - **[34_Logic_Synthesis_Mapping](./34_logic_synthesis_mapping/)**: Technology Mapping using Dynamic Programming.
-- **(Pending 35-50)**: Don't-care optimization, resubstitution, and FPGA mapping.
+- **[35_FPGA_LUT_Mapping](./35_fpga_lut_mapping/)**: K-input LUT covering heuristics.
+- **[36_Boolean_Rewriting](./36_boolean_rewriting/)**: Local AIG sub-graph optimization.
+- **[37_Equivalence_Checking](./37_equivalence_checking/)**: Miter-based formal verification and simulation.
+- **[38_Dont_Care_Optimization](./38_dont_care_optimization/)**: ODC identification for logic pruning.
+- **[39_Logic_Refactoring](./39_logic_refactoring/)**: Algebraic factoring for literal reduction.
+- **[40_State_Machine_Minimization](./40_state_machine_minimization/)**: Moore's algorithm for FSM reduction.
+- **[41_BDD_Sifting](./41_bdd_sifting/)**: Dynamic variable reordering for BDD size.
+- **[42_AIG_Balancing](./42_aig_balancing/)**: Associative restructuring for logic depth reduction.
+- **[43_Gate_Sizing](./43_gate_sizing/)**: Timing-driven area optimization via cell sizing.
+- **[44_Clock_Domain_Crossing](./44_clock_domain_crossing/)**: CDC verification and metastability analysis.
+- **[45_Formal_Induction](./45_formal_induction/)**: k-Induction for property invariant proving.
+- **[46_Logic_Sim_Event](./46_logic_sim_event/)**: Event-driven logic simulation efficiency.
+- **[47_Logic_Sim_Cycle](./47_logic_sim_cycle/)**: Bit-parallel cycle-based simulation (SWAR).
+- **[48_Power_Analysis](./48_power_analysis/)**: Switching activity-based dynamic power estimation.
+- **[49_Synthesis_Report](./49_synthesis_report/)**: Metric aggregation and QoR summarization.
+- **[50_Resource_Estimation](./50_resource_estimation/)**: Early-stage hardware utilization prediction.
 
 ### V. Physical Design (51-80)
-- **(Pending 51-80)**: Floorplanning, Placement, Routing, and Timing Analysis.
+- **[51_Floorplanning_SA](./51_floorplanning_sa/)**: Simulated Annealing for macro block placement.
+- **[52_HPWL_Estimation](./52_hpwl_estimation/)**: Half-Perimeter Wirelength estimation for placement.
+- **[53_Partitioning_Placement](./53_partitioning_placement/)**: Recursive min-cut for global placement.
+- **[54_Analytical_Placement](./54_analytical_placement/)**: Force-directed analytical placement.
+- **[55_Maze_Routing](./55_maze_routing/)**: Lee's algorithm for global maze routing.
+- **(Pending 56-80)**: Detailed Routing, CTS, and Timing Closure.
 
 ### VI. NP-Hard Algorithms (81-100)
 - **(Pending 81-100)**: Travelling Salesman variants, Hypergraph Partitioning, and Advanced Heuristics.
