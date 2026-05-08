@@ -76,7 +76,10 @@ Every module follows the **Research -> Implement -> Measure** lifecycle. We prio
 - **[53_Partitioning_Placement](./53_partitioning_placement/)**: Recursive min-cut for global placement.
 - **[54_Analytical_Placement](./54_analytical_placement/)**: Force-directed analytical placement.
 - **[55_Maze_Routing](./55_maze_routing/)**: Lee's algorithm for global maze routing.
-- **(Pending 56-80)**: Detailed Routing, CTS, and Timing Closure.
+- **[56_Steiner_Tree](./56_steiner_tree/)**: MST-based approximation for RSMT.
+- **[57_Channel_Routing](./57_channel_routing/)**: Left-Edge algorithm for track assignment.
+- **[58_Clock_Tree_Synthesis](./58_clock_tree_synthesis/)**: H-Tree construction for clock distribution.
+- **(Pending 59-80)**: Power Grid, Extraction, and Timing Closure.
 
 ### VI. NP-Hard Algorithms (81-100)
 - **(Pending 81-100)**: Travelling Salesman variants, Hypergraph Partitioning, and Advanced Heuristics.
