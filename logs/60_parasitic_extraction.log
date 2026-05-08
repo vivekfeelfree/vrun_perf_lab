@@ -1,0 +1,12 @@
+=== Module: 60_parasitic_extraction ===
+Start Time: 2026-05-08 05:59:05.555
+------------------------------------------
+--- Parasitic Extraction (Elmore Delay) Laboratory ---
+[QoR] RC Network                     | Memory:      16000 bytes
+[BENCH] Elmore Delay Computation      :        18392 ns
+[METRICS] Elmore Delay to Sink: 499500 ps
+[QoR] Final Delay                    | Memory:          0 bytes | Checksum: 499500
+------------------------------------------
+End Time: 2026-05-08 05:59:05.681
+Total Execution Time: 132ms
+Status: SUCCESS

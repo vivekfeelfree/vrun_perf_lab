@@ -79,7 +79,9 @@ Every module follows the **Research -> Implement -> Measure** lifecycle. We prio
 - **[56_Steiner_Tree](./56_steiner_tree/)**: MST-based approximation for RSMT.
 - **[57_Channel_Routing](./57_channel_routing/)**: Left-Edge algorithm for track assignment.
 - **[58_Clock_Tree_Synthesis](./58_clock_tree_synthesis/)**: H-Tree construction for clock distribution.
-- **(Pending 59-80)**: Power Grid, Extraction, and Timing Closure.
+- **[59_Power_Grid_Analysis](./59_power_grid_analysis/)**: IR drop calculation using iterative solvers.
+- **[60_Parasitic_Extraction](./60_parasitic_extraction/)**: Elmore delay estimation for RC networks.
+- **(Pending 61-80)**: Detailed Routing, Signal Integrity, and Design Rule Checking.
 
 ### VI. NP-Hard Algorithms (81-100)
 - **(Pending 81-100)**: Travelling Salesman variants, Hypergraph Partitioning, and Advanced Heuristics.
