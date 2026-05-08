@@ -1,0 +1,12 @@
+=== Module: 44_clock_domain_crossing ===
+Start Time: 2026-05-08 05:38:19.431
+------------------------------------------
+--- CDC Verification Laboratory ---
+[QoR] CDC Metadata                   | Memory:        152 bytes
+[BENCH] CDC Rule Checking             :          854 ns
+[METRICS] CDC Violations Found: 2
+[QoR] CDC Results                    | Memory:          0 bytes | Checksum: 2
+------------------------------------------
+End Time: 2026-05-08 05:38:19.625
+Total Execution Time: 151ms
+Status: SUCCESS
