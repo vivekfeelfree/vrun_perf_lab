@@ -1,0 +1,12 @@
+=== Module: 37_equivalence_checking ===
+Start Time: 2026-05-08 05:33:48.098
+------------------------------------------
+--- Combinational Equivalence Checking Laboratory ---
+[METRICS] Mismatching Patterns: 0
+[BENCH] CEC Random Simulation (Equivalent):     23666016 ns
+[METRICS] Mismatching Patterns: 2536
+[BENCH] CEC Random Simulation (Non-Equivalent):     13675537 ns
+------------------------------------------
+End Time: 2026-05-08 05:33:48.255
+Total Execution Time: 111ms
+Status: SUCCESS

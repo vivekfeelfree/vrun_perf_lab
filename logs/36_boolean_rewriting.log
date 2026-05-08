@@ -1,0 +1,13 @@
+=== Module: 36_boolean_rewriting ===
+Start Time: 2026-05-08 05:33:44.355
+------------------------------------------
+--- Boolean Rewriting Laboratory ---
+[BENCH] Structural Hashing (Strashing):        93425 ns
+[METRICS] Nodes after strashing: 2
+[BENCH] Local Rewriting Rules         :         5452 ns
+[METRICS] Nodes after rewriting: 2
+[QoR] AIG Footprint                  | Memory:         16 bytes
+------------------------------------------
+End Time: 2026-05-08 05:33:44.514
+Total Execution Time: 153ms
+Status: SUCCESS
