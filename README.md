@@ -87,7 +87,11 @@ Every module follows the **Research -> Implement -> Measure** lifecycle. We prio
 - **[64_Antenna_Checking](./64_antenna_checking/)**: Metal-to-gate area ratio analysis.
 - **[65_Metal_Fill](./65_metal_fill/)**: Density optimization for CMP uniformity.
 - **[66_Std_Cell_Rows](./66_std_cell_rows/)**: Placement constraint generation.
-- **(Pending 67-80)**: ECO, Timing Closure, and Manufacturing Prep.
+- **[67_ECO_Logic_Patch](./67_eco_logic_patch/)**: Late-stage logic modification using spare cells.
+- **[68_Buffer_Insertion](./68_buffer_insertion/)**: Timing closure via RC chain fragmentation.
+- **[69_Yield_Analysis](./69_yield_analysis/)**: Monte Carlo simulation for process variation.
+- **[70_GDSII_Streamer](./70_gdsii_streamer/)**: Binary serialization for mask data.
+- **(Pending 71-80)**: LVS, Parasitic Reduction, and Sign-off Analysis.
 
 ### VI. NP-Hard Algorithms (81-100)
 - **(Pending 81-100)**: Travelling Salesman variants, Hypergraph Partitioning, and Advanced Heuristics.
