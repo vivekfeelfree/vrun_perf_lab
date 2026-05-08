@@ -1,0 +1,12 @@
+=== Module: 40_state_machine_minimization ===
+Start Time: 2026-05-08 05:35:54.972
+------------------------------------------
+--- FSM Minimization Laboratory ---
+[QoR] Initial FSM                    | Memory:        104 bytes | Checksum: 5
+[BENCH] Moore's State Minimization    :         4720 ns
+[METRICS] Minimized States: 2
+[QoR] Final FSM                      | Memory:        104 bytes | Checksum: 2
+------------------------------------------
+End Time: 2026-05-08 05:35:55.052
+Total Execution Time: 86ms
+Status: SUCCESS

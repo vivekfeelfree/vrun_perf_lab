@@ -35,27 +35,36 @@ public:
         nodes.push_back({id, {f1, f2}, d, false});
     }
 
-    // A very simple greedy cut-finding heuristic for K-LUT mapping
+    // A simple greedy cut-finding heuristic for K-LUT mapping
     int compute_lut_count() {
         int lut_count = 0;
-        std::vector<bool> covered(nodes.size(), false);
+        std::vector<bool> is_lut_output(nodes.size(), false);
         
-        // Traverse in reverse topological order (from POs)
-        // For this experiment, we'll just treat the last N nodes as POs
-        for (int i = (int)nodes.size() - 1; i >= pi_count; --i) {
-            if (covered[i]) continue;
+        // Mark POs as needing a LUT
+        std::vector<int> po_list;
+        for (int i = nodes.size() - 1; i >= (int)nodes.size() - 10; --i) po_list.push_back(i);
+
+        std::vector<int> worklist = po_list;
+        std::vector<bool> visited(nodes.size(), false);
+
+        while (!worklist.empty()) {
+            int curr = worklist.back();
+            worklist.pop_back();
+
+            if (nodes[curr].is_pi || visited[curr]) continue;
             
-            // "Map" this node to a LUT
             lut_count++;
-            std::set<int> leaf_set;
-            find_cut(i, leaf_set);
+            is_lut_output[curr] = true;
+            visited[curr] = true;
+
+            std::set<int> leaves;
+            find_cut(curr, leaves);
             
-            for (int leaf : leaf_set) {
-                if (leaf >= pi_count) {
-                    // This leaf is an internal node that needs its own LUT
+            for (int leaf : leaves) {
+                if (!nodes[leaf].is_pi) {
+                    worklist.push_back(leaf);
                 }
             }
-            covered[i] = true;
         }
         return lut_count;
     }
