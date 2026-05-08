@@ -1,0 +1,14 @@
+=== Module: 41_bdd_sifting ===
+Start Time: 2026-05-08 05:37:08.122
+------------------------------------------
+--- BDD Variable Reordering Laboratory ---
+[BENCH] Build Parity (Order A)        :        87768 ns
+[METRICS] Nodes for Order A: 12
+[QoR] BDD Order A                    | Memory:        144 bytes
+[BENCH] Build Parity (Order B)        :         2238 ns
+[METRICS] Nodes for Order B: 12
+[QoR] BDD Order B                    | Memory:        144 bytes
+------------------------------------------
+End Time: 2026-05-08 05:37:08.303
+Total Execution Time: 156ms
+Status: SUCCESS
