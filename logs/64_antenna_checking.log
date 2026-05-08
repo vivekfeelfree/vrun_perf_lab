@@ -1,0 +1,12 @@
+=== Module: 64_antenna_checking ===
+Start Time: 2026-05-08 06:48:16.011
+------------------------------------------
+--- Antenna Effect Checking Laboratory ---
+[QoR] Netlist Database               | Memory:     120000 bytes
+[BENCH] Antenna Rule Check            :       216430 ns
+[METRICS] Antenna Violations: 4926
+[QoR] Final Results                  | Memory:          0 bytes | Checksum: 4926
+------------------------------------------
+End Time: 2026-05-08 06:48:16.202
+Total Execution Time: 166ms
+Status: SUCCESS

@@ -1,0 +1,12 @@
+=== Module: 65_metal_fill ===
+Start Time: 2026-05-08 06:48:19.315
+------------------------------------------
+--- Metal Fill & Density Laboratory (500x500) ---
+[QoR] Density Map                    | Memory:    1000000 bytes
+[BENCH] Metal Fill Insertion          :       505493 ns
+[METRICS] Bins Requiring Fill: 250000
+[QoR] Final Density                  | Memory:          0 bytes | Checksum: 250000
+------------------------------------------
+End Time: 2026-05-08 06:48:19.448
+Total Execution Time: 117ms
+Status: SUCCESS

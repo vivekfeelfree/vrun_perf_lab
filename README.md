@@ -81,7 +81,13 @@ Every module follows the **Research -> Implement -> Measure** lifecycle. We prio
 - **[58_Clock_Tree_Synthesis](./58_clock_tree_synthesis/)**: H-Tree construction for clock distribution.
 - **[59_Power_Grid_Analysis](./59_power_grid_analysis/)**: IR drop calculation using iterative solvers.
 - **[60_Parasitic_Extraction](./60_parasitic_extraction/)**: Elmore delay estimation for RC networks.
-- **(Pending 61-80)**: Detailed Routing, Signal Integrity, and Design Rule Checking.
+- **[61_Detailed_Routing](./61_detailed_routing/)**: Multi-layer A* search with via costs.
+- **[62_Design_Rule_Checking](./62_design_rule_checking/)**: Geometric spacing check heuristics.
+- **[63_Signal_Integrity](./63_signal_integrity/)**: Crosstalk estimation for parallel wires.
+- **[64_Antenna_Checking](./64_antenna_checking/)**: Metal-to-gate area ratio analysis.
+- **[65_Metal_Fill](./65_metal_fill/)**: Density optimization for CMP uniformity.
+- **[66_Std_Cell_Rows](./66_std_cell_rows/)**: Placement constraint generation.
+- **(Pending 67-80)**: ECO, Timing Closure, and Manufacturing Prep.
 
 ### VI. NP-Hard Algorithms (81-100)
 - **(Pending 81-100)**: Travelling Salesman variants, Hypergraph Partitioning, and Advanced Heuristics.
