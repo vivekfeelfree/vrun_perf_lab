@@ -1,0 +1,13 @@
+=== Module: 50_resource_estimation ===
+Start Time: 2026-05-08 05:42:08.184
+------------------------------------------
+--- Resource Estimation Laboratory ---
+[BENCH] Estimation: 32-bit Mult       :        14119 ns
+[METRICS] 32-bit Multiplier: LUTs=512, DSPs=4
+[BENCH] Estimation: 16-bit Counter    :          203 ns
+[METRICS] 16-bit Counter: LUTs=16, FFs=16
+[QoR] Resource Prediction            | Memory:         24 bytes
+------------------------------------------
+End Time: 2026-05-08 05:42:08.319
+Total Execution Time: 152ms
+Status: SUCCESS

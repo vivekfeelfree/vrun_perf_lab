@@ -1,0 +1,24 @@
+=== Module: 49_synthesis_report ===
+Start Time: 2026-05-08 05:42:05.214
+------------------------------------------
+--- Synthesis Report Laboratory ---
+[BENCH] Metric Aggregation            :       190755 ns
+
+================ SYNTHESIS REPORT ================
+ Gate Count: 15000
+ Total Area: 45200.5 um^2
+ Max Delay:  1.45 ns
+ Flip-Flops: 1200
+------------------------------------------------
+ AND2: 5000
+ DFF: 1200
+ INV: 4000
+ OR2: 3000
+ XOR2: 1800
+================================================
+
+[QoR] Report Generation              | Memory:         40 bytes
+------------------------------------------
+End Time: 2026-05-08 05:42:05.407
+Total Execution Time: 194ms
+Status: SUCCESS
