@@ -1,0 +1,12 @@
+=== Module: 85_max_clique_bb ===
+Start Time: 2026-05-08 08:08:10.673
+------------------------------------------
+--- Maximum Clique (Branch & Bound) Laboratory (40 nodes) ---
+[QoR] Adjacency Matrix               | Memory:       1600 bytes
+[BENCH] Max Clique Search             :       318278 ns
+[METRICS] Maximum Clique Size: 5
+[QoR] Final Result                   | Memory:          0 bytes | Checksum: 5
+------------------------------------------
+End Time: 2026-05-08 08:08:10.817
+Total Execution Time: 139ms
+Status: SUCCESS

@@ -1,0 +1,13 @@
+=== Module: 81_tsp_simulated_annealing ===
+Start Time: 2026-05-08 08:04:34.435
+------------------------------------------
+--- TSP (Simulated Annealing) Laboratory (100 cities) ---
+[METRICS] Initial Distance: 49755
+[QoR] Initial State                  | Memory:       1200 bytes
+[BENCH] TSP SA Optimization (100k iterations):     95838379 ns
+[METRICS] Optimized Distance: 12989
+[QoR] Final State                    | Memory:       1200 bytes | Checksum: 12989
+------------------------------------------
+End Time: 2026-05-08 08:04:34.640
+Total Execution Time: 195ms
+Status: SUCCESS

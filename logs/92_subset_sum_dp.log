@@ -1,0 +1,11 @@
+=== Module: 92_subset_sum_dp ===
+Start Time: 2026-05-08 08:13:22.796
+------------------------------------------
+--- Subset Sum (DP) Laboratory ---
+[BENCH] Subset Sum DP Search          :      3281779 ns
+[METRICS] Target Found: YES
+[QoR] DP State Space                 | Memory:     200000 bytes
+------------------------------------------
+End Time: 2026-05-08 08:13:22.934
+Total Execution Time: 136ms
+Status: SUCCESS

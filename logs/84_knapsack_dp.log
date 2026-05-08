@@ -1,0 +1,11 @@
+=== Module: 84_knapsack_dp ===
+Start Time: 2026-05-08 08:08:07.248
+------------------------------------------
+--- 0/1 Knapsack (DP) Laboratory (500 items, 1000 capacity) ---
+[BENCH] Knapsack DP Solver            :      9068848 ns
+[METRICS] Maximum Value: 7301
+[QoR] DP Table                       | Memory:    2000000 bytes | Checksum: 7301
+------------------------------------------
+End Time: 2026-05-08 08:08:07.473
+Total Execution Time: 189ms
+Status: SUCCESS

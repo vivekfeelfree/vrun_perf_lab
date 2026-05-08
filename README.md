@@ -103,7 +103,26 @@ Every module follows the **Research -> Implement -> Measure** lifecycle. We prio
 - **[80_Tapeout_Signoff](./80_tapeout_signoff_checklist/)**: Final design check aggregation.
 
 ### VI. NP-Hard Algorithms (81-100)
-- **(Pending 81-100)**: Travelling Salesman variants, Hypergraph Partitioning, and Advanced Heuristics.
+- **[81_TSP_Simulated_Annealing](./81_tsp_simulated_annealing/)**: Probabilistic metaheuristic for Traveling Salesman.
+- **[82_Hypergraph_Partitioning_FM](./82_hypergraph_partitioning_fm/)**: Fiduccia-Mattheyses iterative min-cut.
+- **[83_SAT_WalkSAT](./83_sat_walksat/)**: Stochastic local search for Boolean satisfiability.
+- **[84_Knapsack_DP](./84_knapsack_dp/)**: Optimal resource allocation via dynamic programming.
+- **[85_Max_Clique_BB](./85_max_clique_bb/)**: Branch & Bound search for fully connected subgraphs.
+- **[86_Graph_Coloring_DSATUR](./86_graph_coloring_dsatur/)**: Saturated degree heuristic for register allocation.
+- **[87_LCS_DP](./87_lcs_dp/)**: Longest Common Subsequence for revision comparison.
+- **[88_Huffman_Coding](./88_huffman_coding/)**: Optimal prefix-free coding for data compression.
+- **[89_Vertex_Cover_Approx](./89_vertex_cover_approx/)**: Greedy 2-approximation for minimum vertex cover.
+- **[90_Hamiltonian_Path_Backtrack](./90_hamiltonian_path_backtrack/)**: Exhaustive search for single-visit paths.
+- **[91_Longest_Path_DAG](./91_longest_path_dag/)**: Linear-time critical path analysis in DAGs.
+- **[92_Subset_Sum_DP](./92_subset_sum_dp/)**: Pseudo-polynomial search for target subsets.
+- **[93_Job_Scheduling_EDF](./93_job_scheduling_edf/)**: Optimal real-time task scheduling.
+- **[94_Sudoku_Backtrack](./94_sudoku_backtrack/)**: Recursive constraint satisfaction search.
+- **[95_Matrix_Chain_DP](./95_matrix_chain_dp/)**: Optimal parenthesization for multiplication efficiency.
+- **[96_KMeans_Clustering](./96_kmeans_clustering/)**: Iterative centroid-based data partitioning.
+- **[97_Prime_Factorization](./97_prime_factorization/)**: Trial division for composite number decomposition.
+- **[98_Rabin_Karp_String_Match](./98_rabin_karp_string_match/)**: Rolling hash-based efficient pattern search.
+- **[99_Simulated_Annealing_Generic](./99_simulated_annealing_generic/)**: Abstract framework for combinatorial optimization.
+- **[100_MCTS_Algorithm](./100_mcts_algorithm/)**: Monte Carlo Tree Search for complex decision trees.
 
 ---
 *Created and maintained with a focus on empirical performance and hardware-software co-design.*

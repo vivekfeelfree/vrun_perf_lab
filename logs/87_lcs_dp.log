@@ -1,0 +1,11 @@
+=== Module: 87_lcs_dp ===
+Start Time: 2026-05-08 08:10:38.453
+------------------------------------------
+--- LCS (DP) Laboratory ---
+[BENCH] LCS DP Solver                 :       109293 ns
+[METRICS] LCS Length: 4
+[QoR] DP Table                       | Memory:        168 bytes | Checksum: 4
+------------------------------------------
+End Time: 2026-05-08 08:10:38.582
+Total Execution Time: 135ms
+Status: SUCCESS

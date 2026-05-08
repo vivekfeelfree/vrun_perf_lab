@@ -1,0 +1,11 @@
+=== Module: 93_job_scheduling_edf ===
+Start Time: 2026-05-08 08:13:26.108
+------------------------------------------
+--- Job Scheduling (EDF) Laboratory (1000 tasks) ---
+[BENCH] EDF Scheduling Heuristic      :        67627 ns
+[METRICS] Tasks Completed On Time: 183
+[QoR] Schedule Stats                 | Memory:      12000 bytes | Checksum: 183
+------------------------------------------
+End Time: 2026-05-08 08:13:26.272
+Total Execution Time: 178ms
+Status: SUCCESS

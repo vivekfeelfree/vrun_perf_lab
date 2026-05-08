@@ -1,0 +1,11 @@
+=== Module: 98_rabin_karp_string_match ===
+Start Time: 2026-05-08 08:32:01.803
+------------------------------------------
+--- Rabin-Karp String Matching Laboratory ---
+[BENCH] Rolling Hash Search           :         1709 ns
+[METRICS] Pattern 'the' found 4 times.
+[QoR] Search Memory                  | Memory:         64 bytes
+------------------------------------------
+End Time: 2026-05-08 08:32:01.892
+Total Execution Time: 106ms
+Status: SUCCESS

@@ -1,0 +1,12 @@
+=== Module: 91_longest_path_dag ===
+Start Time: 2026-05-08 08:13:19.658
+------------------------------------------
+--- Longest Path in DAG Laboratory (1000 nodes) ---
+[QoR] DAG Database                   | Memory:      28000 bytes
+[BENCH] Longest Path Computation      :        24902 ns
+[METRICS] Longest Path Distance: 999
+[QoR] Final Result                   | Memory:          0 bytes | Checksum: 999
+------------------------------------------
+End Time: 2026-05-08 08:13:19.758
+Total Execution Time: 136ms
+Status: SUCCESS
