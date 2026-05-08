@@ -91,7 +91,16 @@ Every module follows the **Research -> Implement -> Measure** lifecycle. We prio
 - **[68_Buffer_Insertion](./68_buffer_insertion/)**: Timing closure via RC chain fragmentation.
 - **[69_Yield_Analysis](./69_yield_analysis/)**: Monte Carlo simulation for process variation.
 - **[70_GDSII_Streamer](./70_gdsii_streamer/)**: Binary serialization for mask data.
-- **(Pending 71-80)**: LVS, Parasitic Reduction, and Sign-off Analysis.
+- **[71_LVS_Check](./71_lvs_check/)**: Connectivity verification via graph signatures.
+- **[72_Parasitic_Reduction](./72_parasitic_reduction/)**: Pi-model simplification for RC networks.
+- **[73_STA_Signoff](./73_sta_signoff/)**: Setup and hold slack validation.
+- **[74_Electromigration](./74_electromigration/)**: Reliability analysis via Black's Law.
+- **[75_Thermal_Analysis](./75_thermal_analysis/)**: 2D heat diffusion modeling.
+- **[76_Logical_Effort](./76_logical_effort/)**: Path optimization and stage scaling.
+- **[77_Glitch_Analysis](./77_glitch_analysis/)**: Static hazard detection in logic.
+- **[78_SER_Soft_Error](./78_ser_soft_error/)**: Particle strike susceptibility estimation.
+- **[79_DFT_Scan_Insertion](./79_dft_scan_insertion/)**: Testability transformation and overhead.
+- **[80_Tapeout_Signoff](./80_tapeout_signoff_checklist/)**: Final design check aggregation.
 
 ### VI. NP-Hard Algorithms (81-100)
 - **(Pending 81-100)**: Travelling Salesman variants, Hypergraph Partitioning, and Advanced Heuristics.

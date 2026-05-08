@@ -1,0 +1,13 @@
+=== Module: 78_ser_soft_error ===
+Start Time: 2026-05-08 07:43:33.399
+------------------------------------------
+--- Soft Error Rate (SER) Analysis Laboratory ---
+[METRICS] FIT (Node 1): 44.9329
+[METRICS] FIT (Node 2): 0.247875
+[METRICS] SER Improvement: 181.272x
+[BENCH] SER FIT Estimation            :       173218 ns
+[QoR] SER Stats                      | Memory:          1 bytes
+------------------------------------------
+End Time: 2026-05-08 07:43:33.540
+Total Execution Time: 134ms
+Status: SUCCESS

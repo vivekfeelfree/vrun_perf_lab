@@ -1,0 +1,12 @@
+=== Module: 79_dft_scan_insertion ===
+Start Time: 2026-05-08 07:43:39.188
+------------------------------------------
+--- DFT Scan Insertion Laboratory (5000 flops) ---
+[BENCH] Scan Chain Insertion          :         7772 ns
+[METRICS] Area Overhead: 1250 units
+[METRICS] Testability (Controllability): 100%
+[QoR] DFT Metrics                    | Memory:       1250 bytes | Checksum: 5000
+------------------------------------------
+End Time: 2026-05-08 07:43:39.393
+Total Execution Time: 187ms
+Status: SUCCESS
